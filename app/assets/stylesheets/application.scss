@@ -1,0 +1,479 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+
+.gvtr {
+  margin-top: 10px;
+  box-shadow: 3px 3px 5px aqua;
+  position: relative;
+  float: right;
+}
+
+.gfont {
+  font-family: 'Glegoo', serif;
+  font-weight: bold;
+  color: black;
+  text-shadow: -2px 2px #FFF;
+}
+
+.ggfont {
+  font-family: 'Glegoo', serif;
+}
+
+.gggfont {
+  font-family: 'Economica', sans-serif;
+  color: white;
+  border-right: 1px solid aqua;
+  position: fixed;
+}
+
+.ggggfont {
+  font-family: 'Economica', sans-serif;
+  color: black;
+  border-bottom: 1px solid aqua;
+  position: relative;
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+
+.gggwid {
+  position: relative;
+  float: left;
+  width: 200px;
+  padding-left: 45px;
+  height: 35px;
+  padding-bottom: 15px;
+}
+
+.abfont {
+  color: white;
+  text-decoration: none;
+  font-weight: lighter;
+  border-bottom: 1px solid black;
+}
+
+
+.abcfont {
+  color: black;
+  text-decoration: none;
+  font-weight: lighter;
+  border-right: 1px solid aqua;
+  border-top: 1px solid aqua;
+  margin-left: 20%;
+  padding-left: 25px;
+  padding-top: 10px;
+  width: 50%
+}
+
+.abcdfont {
+  color: black;
+  text-decoration: none;
+  font-weight: lighter;
+  border-bottom: 1px solid aqua;
+  border-left: 1px solid aqua;
+  margin-left: 20%;
+  padding-left: 35px;
+  padding-bottom: 10px;
+  width: 50%
+}
+
+
+.afont {
+  color: white;
+  text-decoration: none;
+  font-weight: lighter;
+  border-bottom: 1px solid black;
+}
+
+.afont:hover {
+  color: white;
+  text-decoration: none;
+  font-weight: lighter;
+  border-bottom: 1px solid aqua;
+}
+
+.aafont {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  border: 1px solid black;
+  padding: 8px;
+}
+.aafont:hover {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  border-bottom: 1px solid aqua;
+  border-right: 1px solid aqua;
+  padding: 8px;
+}
+
+.aaafont {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.aaafont:hover {
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  border: 1px solid black;
+  border-bottom: 1px solid aqua;
+  border-left: 1px solid aqua;
+  padding: 8px;
+}
+
+.bfont {
+  color: black;
+  text-decoration: none;
+  font-family: 'Economica', sans-serif;
+  border-left: 1px solid white;
+  border-bottom: 1px solid white;
+  font-weight: bolder;
+  padding: 8px;
+}
+
+.bfont:hover {
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 8px;
+}
+
+.bbfont {
+  color: black;
+  text-decoration: none;
+  font-family: 'Economica', sans-serif;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  font-weight: bolder;
+  padding: 8px;
+}
+
+.bbfont:hover {
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 8px;
+}
+
+.cfont {
+  color: white;
+  text-decoration: none;
+  font-family: 'Economica', sans-serif;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: bolder;
+  padding: 8px;
+}
+
+.cfont:hover {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  border-left: 1px solid aqua;
+  border-bottom: 1px solid aqua;
+  padding: 8px;
+}
+
+.abthm {
+  background: black;
+  height: 55px;
+  width: 85px;
+  padding-right: 5px;
+  position: relative;
+  float: right;
+}
+
+.bgimage {
+  height: 1000px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/63/6d/5c/636d5c0b279f5735a66df8163bd86d7b.jpg");
+}
+
+.bglayer {
+  background-color: white;
+  opacity: .9;
+  width: 100%;
+  max-height: 45%;
+  position: relative;
+  float: right;
+  margin-left: -20px;
+  padding-bottom: 20px;
+}
+
+.bgblack {
+  background-color: black;
+  opacity: 1;
+  border-bottom: 2px, solid, black;
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+.bgcenter {
+  background-color: white;
+  display: inline-block;
+  text-align: center;
+  opacity: .9;
+  width: 50%;
+  min-height: 65%;
+  position: absolute;
+  padding-bottom: 20px;
+  margin-left: 25%;
+  margin-top: 5%;
+  margin-bottom: 20%;
+}
+
+.bggcenter {
+  background-color: white;
+  display: inline-block;
+  text-align: center;
+  opacity: .9;
+  width: 50%;
+  min-height: 65%;
+  position: relative;
+  float: top;
+  padding-bottom: 20px;
+  margin-left: 25%;
+  margin-top: 5%;
+  margin-bottom: 20%;
+}
+
+.tablepics {
+  background-color: #F5FFFA;
+  opacity: .95;
+  width: 50%;
+  min-width: 600px;
+  min-height: 30%;
+  margin: 25px;
+  margin-top: 250px;
+}
+
+.blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+}
+
+.font18 {
+  font-size: 18pt;
+}
+
+.discreet {
+  opacity: 1.0;
+  color: #F0FFFF;
+  text-shadow: 1px 1px black;
+  font-style: italic;
+  margin-top: 0px;
+  //margin-left: -13%;
+  //-webkit-transition: margin-left 0.5s linear 0.25s;
+  position: relative;
+  float: left;
+}
+
+.discreet:hover {
+  opacity: 1.0;
+  color: darkgray;
+  margin-left: 0%;
+}
+
+.rmar25 {
+  margin-right: 35px;
+}
+
+.rmar10 {
+  margin-right: 15px;
+}
+
+.rmarneg15 {
+  margin-right: -15px;
+}
+
+.tmar15 {
+  margin-top: 15px;
+}
+
+.lmar15 {
+  margin-left: 15px;
+}
+
+.lmar25 {
+  margin-left: 25px;
+}
+
+.rmar25 {
+  margin-right: 25px;
+}
+
+.lmar10 {
+  margin-left: 10px;
+}
+
+.absolutely {
+  position: absolute;
+}
+
+.lpad25 {
+  padding-left: 25px;
+}
+
+.lpad15 {
+  padding-left: 15px;
+}
+
+.lpad10 {
+  padding-left: 10px;
+}
+
+.rpad0 {
+  padding-right: 0px;
+}
+
+.rpad25 {
+  padding-right: 25px;
+}
+
+.tpad25 {
+  padding-top: 25px;
+}
+
+.tpad50 {
+  padding-top: 50px;
+}
+
+.bpad25 {
+  padding-bottom: 25px;
+}
+
+.pad25 {
+  padding: 25px;
+}
+
+.mar25 {
+  margin: 50px;
+}
+
+.bmar10per {
+  margin-bottom: 10%;
+}
+
+.tmarneg25 {
+  margin-top: -50px;
+  margin-left: -25px;
+}
+
+.bmarneg25 {
+  margin-bottom: -50px;
+  margin-right: -25px;
+}
+
+.wid50{
+  width: 50px;
+  position: relative;
+  float: right;
+}
+
+.rmar60per {
+    margin-right: 60%
+}
+
+.maxwid75per {
+  max-width: 75%;
+}
+
+.wid150 {
+  min-width: 150px;
+}
+
+.mainattractheight {
+  height: 350px ;
+}
+
+.minht350 {
+  min-height: 350px;
+}
+
+.fl {
+  position: relative;
+  float: left;
+}
+
+.fb {
+  position: relative;
+  float: bottom;
+  text-align: center;
+  width: 50%;
+  margin-left: 50%;
+}
+
+.infoinfo {
+  font-family: 'Glegoo', serif;
+  text-align: justify;
+  color: black;
+  size: 16pt;
+}
+
+.infofont {
+  font-family: 'Glegoo', serif;
+  text-align: justify;
+  color: black;
+  size: 12pt;
+}
+
+.fullheight {
+  height: 100%;
+}
+
+.glyphist {
+  color: black;
+  font-size: 36px;
+  text-decoration: none;
+}
+
+.glyphist:hover {
+  text-decoration: none;
+}
+
+.topline {
+  border-top: 1px solid aqua;
+  width: 50%;
+  margin-left: 25%;
+  padding-top: 10px;
+}

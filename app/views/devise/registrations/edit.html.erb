@@ -1,0 +1,48 @@
+<div class="abthm lpad15">
+  <h5><%= link_to "Home", welcome_index_path, class:  "cfont font18 .lpad10" %></h5>
+</div>
+<div class="bggcenter bmar10per bpad25">
+  <h1 class="ggggfont tpad15 lpad25">Edit Profile</h1>
+  <div class="pad25">
+    <h4 class="infofont tpad50">
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+        <%= devise_error_messages! %>
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true %>
+      </div><br>
+      <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+        <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+      <% end %>
+      <div class="field">
+        <%= f.label :password %><small>(leave blank if you don't want to change it)</small><br />
+        <%= f.password_field :password, autocomplete: "off" %>
+        <% if @minimum_password_length %>
+          <br />
+          <small><%= @minimum_password_length %> characters minimum</small>
+        <% end %>
+      </div><br>
+      <div class="field">
+        <%= f.label :password_confirmation %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "off" %>
+      </div><br>
+      <div class="field">
+        <%= f.label :current_password %> <small>(we need your current password to confirm your changes)</small><br />
+        <%= f.password_field :current_password, autocomplete: "off" %><br />
+      </div>
+      <div class="actions">
+        <%= f.submit "Update" %>
+      </div>
+      <% end %>
+      <h3 class="infoinfo"><strong>Cancel my account</strong></h3>
+      <p class="infoinfo">Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete, class: "gfont infofont pull-left" %></p><br />
+      <br><%= link_to "Back", :back, class: "gfont pull-left" %>
+    </h4>
+  </div>
+  <div class="topline glyphist tmar15">
+    <a class="glyphicon glyphicon-align-left glyphist"></a>
+    <a class="glyphicon glyphicon-stats lmar25 rmar25 glyphist"></a>
+    <a class="glyphicon glyphicon-align-right glyphist"></a>
+  </div>
+</div>
+<div class="bmar10per"></div>
