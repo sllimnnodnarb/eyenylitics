@@ -1,0 +1,18 @@
+<%= form_for @reg_app do |f| %>
+<% if @reg_app.errors.any? %>
+  <div class="alert alert-danger">
+    <h4><%= pluralize(@reg_app.errors.count, "error") %>.</h4>
+    <ul>
+      <% @reg_app.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+<br>
+  <%= f.label :application_name %>
+  <%= f.text_field :name, class: 'form-control', placeholder: "Enter Application Name" %><br>
+  <%= f.label :application_url %><br>
+  <%= f.text_field :url, class: 'form-control', placeholder: "Enter Application URL" %><br>
+  <%= f.submit "Save", class: 'efont' %>
+<% end %>

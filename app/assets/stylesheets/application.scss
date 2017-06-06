@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- 
+
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
@@ -71,6 +71,8 @@
 
 .abcfont {
   color: black;
+  font-family: 'Economica', sans-serif;
+  font-size: 24pt;
   text-decoration: none;
   font-weight: lighter;
   border-right: 1px solid aqua;
@@ -83,6 +85,8 @@
 
 .abcdfont {
   color: black;
+  font-family: 'Economica', sans-serif;
+  font-size: 24pt;
   text-decoration: none;
   font-weight: lighter;
   border-bottom: 1px solid aqua;
@@ -181,6 +185,25 @@
   padding: 8px;
 }
 
+.bbbfont {
+  color: black;
+  text-decoration: none;
+  font-family: 'Economica', sans-serif;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  font-weight: bolder;
+  padding: 8px;
+}
+
+.bbbfont:hover {
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  padding: 8px;
+}
+
 .cfont {
   color: white;
   text-decoration: none;
@@ -197,6 +220,43 @@
   font-weight: bolder;
   border-left: 1px solid aqua;
   border-bottom: 1px solid aqua;
+  padding: 8px;
+}
+
+.dfont {
+  color: black;
+  text-decoration: none;
+  font-family: 'Economica', sans-serif;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  font-weight: bolder;
+  padding: 8px;
+}
+
+.dfont:hover {
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 8px;
+}
+
+.efont {
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  font-family: 'Economica', sans-serif;
+  border: 1px solid white;
+  font-weight: bolder;
+  padding: 8px;
+}
+
+.efont:hover {
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+  border: 1px solid black;
   padding: 8px;
 }
 
@@ -243,12 +303,12 @@
   display: inline-block;
   text-align: center;
   opacity: .9;
-  width: 50%;
-  min-height: 65%;
+  width: 75%;
+  min-height: 50%;
   position: absolute;
   padding-bottom: 20px;
-  margin-left: 25%;
-  margin-top: 5%;
+  margin-left: 12.5%;
+  margin-top: 15%;
   margin-bottom: 20%;
 }
 
@@ -331,12 +391,28 @@
   margin-top: 15px;
 }
 
+.tmar15 {
+  margin-top: 25px;
+}
+
+.bmar15 {
+  margin-bottom: 15px;
+}
+
+.bmar25 {
+  margin-bottom: 25px;
+}
+
 .lmar15 {
   margin-left: 15px;
 }
 
 .lmar25 {
   margin-left: 25px;
+}
+
+.lmarneg10 {
+  margin-left: -10px;
 }
 
 .rmar25 {
@@ -377,6 +453,10 @@
 
 .tpad50 {
   padding-top: 50px;
+}
+
+.tpad75 {
+  padding-top: 75px;
 }
 
 .bpad25 {

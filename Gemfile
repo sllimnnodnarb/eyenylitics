@@ -10,7 +10,6 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'sqlite3'
   gem 'shoulda'
-  gem 'faker'
   gem 'factory_girl_rails', '~> 4.0'
   gem 'pry-rails'
   gem 'byebug', platform: :mri
@@ -39,4 +38,5 @@ gem 'bcrypt'
 gem 'puma', '~> 3.0'
 gem 'devise'
 gem 'pundit'
+gem 'faker'
 gem 'stripe'
