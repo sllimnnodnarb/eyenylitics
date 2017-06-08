@@ -48,8 +48,9 @@
   border-bottom: 1px solid aqua;
   position: relative;
   float: left;
-  width: 33%;
-  text-align: center;
+  width: 50%;
+  text-align: left;
+  padding-left: 15px;
 }
 
 .gggwid {
@@ -269,8 +270,19 @@
   float: right;
 }
 
+.glyfont {
+  color: black;
+  text-decoration: none;
+  text-shadow: 1px 1px aqua;
+}
+
+.glyphont:hover {
+  color: black;
+  text-decoration: none;
+}
+
 .bgimage {
-  height: 1000px;
+  height: 1500px;
   width: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -308,7 +320,7 @@
   position: absolute;
   padding-bottom: 20px;
   margin-left: 12.5%;
-  margin-top: 15%;
+  margin-top: 13%;
   margin-bottom: 20%;
 }
 
@@ -325,6 +337,16 @@
   margin-left: 25%;
   margin-top: 5%;
   margin-bottom: 20%;
+}
+
+.tcent {
+  text-align: center;
+}
+
+.bline2 {
+  border-bottom: 1px solid aqua;
+  padding-bottom: 5px;
+  width: 50%;
 }
 
 .tablepics {
@@ -391,8 +413,16 @@
   margin-top: 15px;
 }
 
-.tmar15 {
+.tmar25 {
   margin-top: 25px;
+}
+
+.tmar50per {
+  margin-top: 150px;
+}
+
+.tmar33per {
+  margin-top: 33%;
 }
 
 .bmar15 {
@@ -403,12 +433,20 @@
   margin-bottom: 25px;
 }
 
+.bmar75 {
+  margin-bottom: 75px;
+}
+
 .lmar15 {
   margin-left: 15px;
 }
 
 .lmar25 {
   margin-left: 25px;
+}
+
+.lmar25per {
+  margin-left: 25%;
 }
 
 .lmarneg10 {
@@ -429,6 +467,10 @@
 
 .lpad25 {
   padding-left: 25px;
+}
+
+.rpad {
+  padding-right: 10px;
 }
 
 .lpad15 {
@@ -478,6 +520,10 @@
 .tmarneg25 {
   margin-top: -50px;
   margin-left: -25px;
+}
+
+.tmar {
+  margin-top: 100px;
 }
 
 .bmarneg25 {
@@ -557,4 +603,8 @@
   width: 50%;
   margin-left: 25%;
   padding-top: 10px;
+}
+
+.abs {
+  position: absolute;
 }

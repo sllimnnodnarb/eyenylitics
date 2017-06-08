@@ -1,10 +1,12 @@
 class RegisteredApplicationsController < ApplicationController
+
   def index
     @reg_apps = RegisteredApplication.all
   end
 
   def show
     @reg_app = RegisteredApplication.find(params[:id])
+    @reg_apps = RegisteredApplication.all
   end
 
   def new
@@ -16,7 +18,7 @@ class RegisteredApplicationsController < ApplicationController
     @reg_app = RegisteredApplication.new(reg_app_params)
 
     if @reg_app.save
-      redirect_to @reg_app, notice: "Your Registered Aplication has been saved successfully."
+      redirect_to registered_applications_path, notice: "Your Registered Aplication has been saved successfully."
     else
       flash.now[:alert] = "Error saving your Registered Application. Please try again."
       render :new
@@ -45,14 +47,14 @@ class RegisteredApplicationsController < ApplicationController
 
     if @reg_app.destroy
       flash[:notice] = "\"#{@reg_app.name}\" was deleted successfully."
-      redirect_to @reg_apps
+      redirect_to registered_applications_path
     else
       flash.now[:alert] = "There was an error deleting your Registered Application. Please try again"
       render :show
     end
   end
 
-  private
+
 
   def reg_app_params
     params.require(:registered_application).permit(:name, :url, :id)

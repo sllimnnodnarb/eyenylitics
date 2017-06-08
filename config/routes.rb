@@ -4,6 +4,10 @@ Rails.application.routes.draw do
 
   devise_for :users
 
+  get 'registered_application/show'
+
+  get 'registered_application/edit'
+
   get 'users/show'
 
   get 'welcome/index'

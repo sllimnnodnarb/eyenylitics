@@ -2,15 +2,19 @@
   <h5><%= link_to "Home", welcome_index_path, class:  "cfont font18 .lpad10" %></h5>
 </div>
 <div class="bgcenter ">
-  <h1 class="ggggfont tpad15 lpad25">Currently Registered Applications</h1>
+  <h1 class="ggggfont tpad15 lpad25">Recently Added Application</h1>
 <div>
 <div class="row pad25">
   <h4 class="infoinfo tpad50">
     <div class="container pull-left bmar25">
       <h5><%= link_to "Edit App Info", edit_registered_application_path, class: "pull-left lmarneg10 dfont font18" %></h5>
     </div>
-    <div class="pull-left tmar25">
-    <%= render @reg_app %>
+    <div class="tcent">
+      <h2><%= @reg_app.name %></h2>
+      <small class="lmar10 rmar10">Application registered for <%= time_ago_in_words(@reg_app.created_at) %></small>
+      <div>
+        <%= link_to "", registered_application_path(@reg_app), method: :delete, data: { confirm: 'Are you sure you want to deregister this Application?'}, class: "glyphicon glyphicon-trash glyfont tmar15" %>
+      </div>
   </div>
   </h4>
 </div>
