@@ -17,7 +17,7 @@
         <%= link_to "", registered_application_path(@reg_app), method: :delete, data: { confirm: 'Are you sure you want to deregister this Application?'}, class: "glyphicon glyphicon-trash glyfont tmar15 bline2" %>
       </div>
       <h3 class="pull-left lmar25per bmar25">Recent Events:<br></h3>
-      <p class="infoinfo tmar33 tcent tmar50"> -
+      <p class="infoinfo tmar33 tcent tmar50">
         <%= @reg_app.events.name %>
       </p>
     </div>
