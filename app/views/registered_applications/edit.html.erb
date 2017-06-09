@@ -1,2 +1,21 @@
-<h1>RegisteredApplications#edit</h1>
-<p>Find me in app/views/registered_applications/edit.html.erb</p>
+<div class="abthm lpad15">
+  <h5><%= link_to "Home", welcome_index_path, class:  "cfont font18 .lpad10" %></h5>
+</div>
+<div class="bgcenter ">
+  <h1 class="ggggfont tpad15 lpad25">Edit <% @reg_app.name %></h1>
+<div>
+<div class="row pad25">
+  <h4 class="infoinfo tpad50">
+    <div class="tcent">
+      <%= render partial: "form", locals: {registered_application_path: @reg_app}, class: "dfont" %>
+      <div>
+        <%= link_to "", registered_application_path(@reg_app), method: :delete, data: { confirm: 'Are you sure you want to deregister this Application?'}, class: "glyphicon glyphicon-trash glyfont tmar15" %>
+      </div>
+  </div>
+  </h4>
+</div>
+<div class="topline glyphist">
+  <a class="glyphicon glyphicon-align-left glyphist"></a>
+  <a class="glyphicon glyphicon-stats lmar25 rmar25 glyphist"></a>
+  <a class="glyphicon glyphicon-align-right glyphist"></a>
+</div>
