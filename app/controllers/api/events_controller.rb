@@ -21,7 +21,8 @@ class API::EventsController < ApplicationController
   end
 
   def create
-    registered_application = RegisteredApplication.find_by(url: request.env['HTTP_LOCALHOST:3000'])
+    Rails.logger.info(">>>>> #{request.env.inspect}")
+    registered_application = RegisteredApplication.find_by(url: request.env['HTTP_ORIGIN'])
     if registered_application.nil?
       render json: "Unregistered application", status: :unprocessable_entity
     else

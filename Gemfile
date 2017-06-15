@@ -8,7 +8,6 @@ end
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
-  gem 'sqlite3'
   gem 'shoulda'
   gem 'factory_girl_rails', '~> 4.0'
   gem 'pry-rails'
@@ -17,6 +16,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'pg'
   gem 'web-console', '~> 2.0'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
@@ -32,7 +32,6 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'figaro'
 gem 'bcrypt'
 gem 'puma', '~> 3.0'
@@ -40,3 +39,5 @@ gem 'devise'
 gem 'pundit'
 gem 'faker'
 gem 'stripe'
+gem 'chartkick'
+gem 'groupdate'

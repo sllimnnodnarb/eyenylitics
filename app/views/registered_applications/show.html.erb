@@ -1,3 +1,4 @@
+<%= javascript_include_tag "https://www.gstatic.com/charts/loader.js" %>
 <div class="abthm lpad15">
   <h5><%= link_to "Home", welcome_index_path, class:  "cfont font18 .lpad10" %></h5>
 </div>
@@ -13,13 +14,18 @@
       <h2><%= @reg_app.name %></h2>
       <h4 class="gfont"> <%= @reg_app.url %></h4>
       <small class="lmar10 rmar10">Application registered for <%= time_ago_in_words(@reg_app.created_at) %></small>
-      <div>
-        <%= link_to "", registered_application_path(@reg_app), method: :delete, data: { confirm: 'Are you sure you want to deregister this Application?'}, class: "glyphicon glyphicon-trash glyfont tmar15 bline2" %>
+      <div class="bmar15">
+        <%= link_to "", registered_application_path(@reg_app), method: :delete, data: { confirm: 'Are you sure you want to deregister this Application?'}, class: "glyphicon glyphicon-trash glyfont tmar15 bline2 bmar15" %>
       </div>
       <h3 class="pull-left lmar25per bmar25">Recent Events:<br></h3>
-      <p class="infoinfo tmar33 tcent tmar50">
-        <%= @reg_app.events.name %>
+      <p class="infoinfo tmar33 tcent tmar50 bmar25">
+        <%= pie_chart @reg_app.events.group(:name).count %>
       </p>
+      <div class="tmar50">
+        </p class="tmar25">
+          <%= line_chart @reg_app.events.group_by_day(:created_at).count %>
+        </p>
+      </div>
     </div>
   </h4>
 </div>
