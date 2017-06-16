@@ -6,6 +6,8 @@ class RegisteredApplicationsController < ApplicationController
 
   def show
     @reg_app = RegisteredApplication.find(params[:id])
+    @reg_apps = RegisteredApplication.all
+    @events = @reg_app.events.group(:name)
   end
 
   def new

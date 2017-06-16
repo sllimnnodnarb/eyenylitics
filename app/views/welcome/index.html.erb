@@ -15,6 +15,19 @@
     <h4 class="gfont bpad">Make data-driven decisions.</h4>
   </div>
 </div>
+<div class="latestactivity">
+  <div class=latestactivity2>
+  <h2 class="b5font">Latest Eyenylitics Data:</h2>
+  <div>
+    <%=  pie_chart RegisteredApplication.first.events.group(:name).count %>
+    <small class="tmar25"> * results obtained from the registered app: <strong><%= "#{RegisteredApplication.first.name}" %></strong></small>
+  </div>
+  <div>
+    <%=  pie_chart RegisteredApplication.second.events.group(:name).count %>
+    <small class="tmar25"> * results obtained from the registered app: <strong><%= "#{RegisteredApplication.second.name}" %></strong></small>
+  </div>
+</div>
+</div>
 <div class="tablepics">
   <table>
     <tr>
@@ -25,5 +38,5 @@
       <th><h3 class="abcdfont">Proven Results</h3>
       <th><%= image_tag("bizmeetpic2.jpg", :alt => "bizmeet2", class:"bmarneg25") %></th>
     </tr>
-  </div>
-</table>
+  </table>
+</div>

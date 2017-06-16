@@ -13,9 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20170608231138) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "events", force: :cascade do |t|
     t.string   "name"
     t.integer  "registered_application_id"
@@ -23,7 +20,7 @@ ActiveRecord::Schema.define(version: 20170608231138) do
     t.datetime "updated_at",                null: false
   end
 
-  add_index "events", ["registered_application_id"], name: "index_events_on_registered_application_id", using: :btree
+  add_index "events", ["registered_application_id"], name: "index_events_on_registered_application_id"
 
   create_table "registered_applications", force: :cascade do |t|
     t.string   "name"
@@ -33,7 +30,7 @@ ActiveRecord::Schema.define(version: 20170608231138) do
     t.datetime "updated_at", null: false
   end
 
-  add_index "registered_applications", ["user_id"], name: "index_registered_applications_on_user_id", using: :btree
+  add_index "registered_applications", ["user_id"], name: "index_registered_applications_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -54,10 +51,8 @@ ActiveRecord::Schema.define(version: 20170608231138) do
     t.datetime "updated_at",                          null: false
   end
 
-  add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
-  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
-  add_foreign_key "events", "registered_applications"
-  add_foreign_key "registered_applications", "users"
 end

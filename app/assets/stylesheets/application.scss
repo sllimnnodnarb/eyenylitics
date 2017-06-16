@@ -205,6 +205,15 @@
   padding: 8px;
 }
 
+.b5font {
+  color: black;
+  text-decoration: none;
+  font-family: 'Glegoo', serif;
+  border-bottom: 1px solid aqua;
+  font-weight: bolder;
+  padding: 8px;
+}
+
 .cfont {
   color: white;
   text-decoration: none;
@@ -240,6 +249,25 @@
   font-weight: bolder;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
+  padding: 8px;
+}
+
+.ddfont {
+  color: black;
+  text-decoration: none;
+  font-family: 'Economica', sans-serif;
+  border-right: 1px solid white;
+  border-top: 1px solid white;
+  font-weight: bolder;
+  padding: 8px;
+}
+
+.ddfont:hover {
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
   padding: 8px;
 }
 
@@ -316,24 +344,23 @@
 
 .bgcenter {
   background-color: white;
-  display: inline-block;
   text-align: center;
   opacity: .9;
   width: 75%;
   min-height: 50%;
+  max-height: 1000px;
   position: absolute;
   padding-bottom: 20px;
   margin-left: 12.5%;
   margin-top: 13%;
   margin-bottom: 20%;
-
 }
 
 .bggcenter {
   background-color: white;
   display: inline-block;
   text-align: center;
-  opacity: .9;
+  opacity: .95;
   width: 50%;
   min-height: 65%;
   position: relative;
@@ -348,20 +375,45 @@
   text-align: center;
 }
 
+.rmar25per {
+  margin-right: 25%;
+}
+
 .bline2 {
   border-bottom: 1px solid aqua;
   padding-bottom: 5px;
   width: 50%;
 }
 
+.wid50per {
+  width: 50%;
+}
+
+.wid75 {
+  width: 75px;
+}
+
 .tablepics {
   background-color: #F5FFFA;
   opacity: .95;
-  width: 50%;
   min-width: 600px;
+  max-width: 600px;
   min-height: 30%;
   margin: 25px;
   margin-top: 250px;
+}
+
+.latestactivity {
+  position: absolute;
+  float: right;
+  margin-left: 800px;
+  margin-top: 250px;
+  margin-bottom: 25%;
+  width: 30%;
+  padding: 25px;
+  opacity: .95;
+  background-color: #F5FFFA;
+  background-clip: url("https://68.media.tumblr.com/tumblr_m8e6a0j3s41r0zmy0o1_500.gif")
 }
 
 .blur {
@@ -421,9 +473,21 @@
 .tmar25 {
   margin-top: 25px;
 }
+.tmar125 {
+  margin-top: 125px;
+}
+.tmar150 {
+  margin-top: 150px;
+}
 
 .tmar50 {
   margin-top: 50px;
+}
+
+.tmar90per {
+  margin-top: 90%;
+  height: 5%;
+  margin-bottom: 5%;
 }
 
 .tmar50per {
@@ -452,6 +516,18 @@
 
 .lmar25 {
   margin-left: 25px;
+}
+
+.lmar33per {
+  margin-left: 33%;
+}
+
+.lmar100 {
+  margin-left: 100px;
+}
+
+.lmar150 {
+  margin-left: 150px;
 }
 
 .lmar25per {
@@ -534,7 +610,13 @@
 .tmar {
   margin-top: 100px;
 }
+.tmar90 {
+  margin-top: 90px;
+}
 
+.posfx {
+  position: fixed;
+}
 .bmarneg25 {
   margin-bottom: -50px;
   margin-right: -25px;
@@ -544,6 +626,10 @@
   width: 50px;
   position: relative;
   float: right;
+}
+
+.ht500 {
+  min-height: 500px;
 }
 
 .rmar60per {
@@ -598,6 +684,11 @@
   overflow: scroll;
 }
 
+.ht1000 {
+  height: 1000px;
+  max-height: 1000px;
+}
+
 .glyphist {
   color: black;
   font-size: 36px;
@@ -608,9 +699,21 @@
   text-decoration: none;
 }
 
+.glyphist2 {
+  color: black;
+  font-size: 24px;
+  text-decoration: none;
+}
+
 .topline {
   border-top: 1px solid aqua;
   width: 50%;
+  margin-left: 25%;
+  padding-top: 10px;
+}
+
+.tline {
+  border-top: 1px solid aqua;
   margin-left: 25%;
   padding-top: 10px;
 }

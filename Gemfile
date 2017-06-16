@@ -16,7 +16,7 @@ group :development, :test do
 end
 
 group :development do
-  gem 'pg'
+  gem 'sqlite3'
   gem 'web-console', '~> 2.0'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
