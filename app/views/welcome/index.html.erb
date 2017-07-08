@@ -22,8 +22,8 @@
     <%=  pie_chart RegisteredApplication.first.events.group(:name).count %>
     <small class="tmar25"> * results obtained from the registered app: <strong><%= "#{RegisteredApplication.first.name}" %></strong></small>
   </div>
-  <div>
-    <%=  pie_chart RegisteredApplication.second.events.group(:name).count %>
+  <div class="tline100 tmar25 tpad25 bmar25">
+    <%=  line_chart RegisteredApplication.second.events.group(:name).count %>
     <small class="tmar25"> * results obtained from the registered app: <strong><%= "#{RegisteredApplication.second.name}" %></strong></small>
   </div>
 </div>
